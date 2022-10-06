@@ -1,0 +1,79 @@
+// scss
+@use 'vars';
+
+.errorDialogue {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: var(--hospital-green);
+}
+
+
+.tracking-in-contract-bck-top {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 27vh;
+    font-size: 50px;
+	animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.focus-in-contract-bck {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 130px;
+	animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ 
+.home-page-link {
+    color:aliceblue;
+    text-decoration: none;
+    padding: 15px;
+    background-color: var(--black);
+}
+
+.text-shadow-pop-top {
+    margin-top: 0px;
+    padding-bottom: 5px;
+	animation: text-shadow-pop-top 1s reverse both;
+}
+
+@keyframes tracking-in-contract-bck-top {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(400px) translateY(-300px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(300px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(12px);
+      filter: blur(0);
+      opacity: 1;
+    }
+}
+
+@keyframes text-shadow-pop-top {
+    0% {
+      text-shadow: 0 0 var(--dark-grey), 0 0 var(--dark-grey), 0 0 var(--dark-grey), 0 0 var(--dark-grey), 0 0 var(--dark-grey), 0 0 var(--dark-grey), 0 0 var(--dark-grey), 0 0 var(--dark-grey);
+      transform: translateY(0);
+    }
+    100% {
+      text-shadow: 0 -1px var(--dark-grey), 0 -2px var(--dark-grey), 0 -3px var(--dark-grey), 0 -4px var(--dark-grey), 0 -5px var(--dark-grey), 0 -6px var(--dark-grey), 0 -7px var(--dark-grey), 0 -8px var(--dark-grey);
+      transform: translateY(8px);
+    }
+}
