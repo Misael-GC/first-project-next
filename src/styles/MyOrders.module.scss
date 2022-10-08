@@ -18,7 +18,7 @@
 	top: 60px;
 	bottom: auto;
 	border-radius: 6px;
-	border: 1px solid var(--very-light-pink);
+	border: 1px solid $--very-light-pink;
 	background: white;
 	animation: swipeLeft 0.26s ease;
 	//scroll
@@ -35,11 +35,11 @@
 	width: 0.5rem;
 }
 .my-order-content::-webkit-scrollbar-track {
-background: var( --very-light-pink );
+background: $--very-light-pink ;
 border-radius: 1rem;
 }
 .my-order-content::-webkit-scrollbar-thumb {
-background-color: var( --hospital-green );
+background-color: $--hospital-green ;
 border-radius: 20px;
 }
 .my-order-content {
@@ -53,7 +53,7 @@ border-radius: 20px;
 
 //@aporte2
 .cart-empty {
-	color: var(--hospital-green);
+	color: $--hospital-green;
 	text-align: center;
 	font-weight: bold;
   }
@@ -68,7 +68,7 @@ border-radius: 20px;
 	margin-right: 14px;
 }
 .title {
-	font-size: var(--lg);
+	font-size: $--lg;
 	font-weight: bold;
 }
 .order {
@@ -76,7 +76,7 @@ border-radius: 20px;
 	grid-template-columns: auto 1fr;
 	gap: 16px;
 	align-items: center;
-	background-color: var(--text-input-field);
+	background-color: $--text-input-field;
 	margin-bottom: 24px;
 	border-radius: 8px;
 	padding: 0 24px;
@@ -86,7 +86,7 @@ border-radius: 20px;
 	flex-direction: column;
 }
 .order p span:nth-child(1) {
-	font-size: var(--md);
+	font-size: $--md;
 	font-weight: bold;
 }
 .order p:nth-child(2) {
@@ -95,13 +95,13 @@ border-radius: 20px;
 }
 
 .primary-button {
-	background-color: var(--hospital-green);
+	background-color: $--hospital-green;
 	border-radius: 8px;
 	border: none;
-	color: var(--white);
+	color: $--white;
 	width: 100%;
 	cursor: pointer;
-	font-size: var(--md);
+	font-size: $--md;
 	font-weight: bold;
 	height: 50px;
 }
