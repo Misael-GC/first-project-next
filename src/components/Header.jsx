@@ -6,6 +6,7 @@ import logo from '@logos/logo_yard_sale.svg';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 import MyOrder from '@containers/MyOrder.jsx';
 import styles from '../styles/Header.module.scss';
+import Image from "next/image";
 // import '@styles/Header.scss';
 
 
@@ -23,10 +24,10 @@ function Header() {
 
   return (
     <nav className={styles.Nav}>
-      <img src={menu} alt="menu" className={styles.menu} />
+      <Image src={menu} alt="menu" className={styles.menu} />
 
       <div className={styles["navbar-left"]}>
-        <img src={logo} alt="logo" className={styles["nav-logo"]} />
+        <Image src={logo} alt="logo" className={styles["nav-logo"]} />
           
         <ul>
           <li>
@@ -56,7 +57,7 @@ function Header() {
             platzi@example.com
           </li>
           <li className={styles["navbar-shopping-cart" ]}onClick={() => setToggleOrders(!toogleOrders)}>
-            <img src={shoppingCart} alt="shopping cart" />
+            <Image src={shoppingCart} alt="shopping cart" />
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>
