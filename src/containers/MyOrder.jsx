@@ -17,11 +17,11 @@ const MyOrder = () => {
 
 	return (
 		<aside className={styles.MyOrder}>
-			<div className="title-container">
+			<div className={styles["title-container"]}>
 				<img src={arrow} alt="arrow" />
-				<p className="title">My order</p>
+				<p className={styles["title"]}>My order</p>
 			</div>
-			<div className="my-order-content">
+			<div className={styles["my-order-content"]}>
 				{state.cart.length > 0 ?(
 					state.cart.map((product, index) => (
 					<OrderItem 
@@ -29,15 +29,15 @@ const MyOrder = () => {
 					product={product} 
 					key={index}/>
 				))
-				): (<div className="cart-empty"> No tienes productos Agregados ¯\_(ツ)_/¯ </div>)}
+				): (<div className={styles["cart-empty"]}> No tienes productos Agregados ¯\_(ツ)_/¯ </div>)}
 				
-				<div className="order">
+				<div className={styles["order"]}>
 					<p>
 						<span>Total</span>
 					</p>
 					<p>${sumTotal()}</p>
 				</div>
-				<button className="primary-button">
+				<button className={styles["primary-button"]}>
 					Checkout
 				</button>
 			</div>

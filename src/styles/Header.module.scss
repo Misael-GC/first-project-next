@@ -10,6 +10,7 @@
     position: sticky;
 	top: 0;
 	background-color: white;
+    color: black;
 }
 .menu {
     display: none;
@@ -25,12 +26,15 @@
     display: flex;
     align-items: center;
     height: 60px;
+    color: black;
 }
 .navbar-left {
     display: flex;
+    color: black;
 }
 .navbar-left ul {
     margin-left: 12px;
+    color: black;
 }
 .navbar-left ul li a,
 .navbar-right ul li a {
