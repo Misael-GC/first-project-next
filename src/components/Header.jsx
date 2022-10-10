@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import Link from "next/link";
 import AppContext from "@context/AppContext";
 import Menu from '@components/Menu';
 import MenuMobile from '@components/MenuMobile';
@@ -34,7 +35,9 @@ function Header() {
       <Image src={menu} alt="menu" className={styles.menu}  onClick={handleToggleMenuMobile}/>
 
       <div className={styles["navbar-left"]}>
-        <Image src={logo} alt="logo" className={styles["nav-logo"]} />
+        <Link href='/'>
+          <Image src={logo} alt="logo" className={styles["nav-logo"]} />
+        </Link>
         <ul>
           <li>
             <a href="/">All</a>

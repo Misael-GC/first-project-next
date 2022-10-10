@@ -11,12 +11,14 @@
 	top: 0;
 	background-color: white;
     color: black;
+    z-index: 3;
 }
 .menu {
     display: none;
 }
 .nav-logo {
     width: 100px;
+    cursor: pointer;
 }
 .navbar-left ul,
 .navbar-right ul {

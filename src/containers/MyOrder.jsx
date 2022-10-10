@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Link from 'next/link'; //paso 1
 import AppContext from '@context/AppContext';
 import OrderItem from '@components/OrderItem';
 import arrow from '@icons/flechita.svg'
@@ -41,9 +42,9 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
 					</p>
 					<p>${sumTotal()}</p>
 				</div>
-				<button className={styles["primary-button"]}>
+				<Link className={styles["primary-button"]} href='/checkout'> 
 					Checkout
-				</button>
+				</Link>
 			</div>
 		</aside>
 	);
