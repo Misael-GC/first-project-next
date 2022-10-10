@@ -10,6 +10,7 @@
 	top: 60px;
 	right: 50px;
 	background: $--white;
+	z-index: 1;
 }
 
 .Menu ul {
@@ -37,4 +38,11 @@
 	text-decoration: none;
 	margin-bottom: 20px;
 	display: inline-block;
+}
+
+@media (max-width: 640px) {
+    .Menu {
+        display: none;
+    }
+
 }
