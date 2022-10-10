@@ -62,7 +62,7 @@ function Header() {
         </ul>
       </div>
       {toogle && <Menu/>}      {/* si toogle es true entonces se muestra */}
-      {toogleOrders && <MyOrder/>}
+      {toogleOrders && <MyOrder  toogleOrders={toogleOrders} setToggleOrders={setToggleOrders} />}
     </nav>
   );
 }

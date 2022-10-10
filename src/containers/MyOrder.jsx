@@ -6,7 +6,7 @@ import arrow from '@icons/flechita.svg'
 import styles from '../styles/MyOrders.module.scss';
 
 
-const MyOrder = () => {
+const MyOrder = ({ toggleOrders, setToggleOrders }) => {
 	const { state } = useContext(AppContext);
 
 	const sumTotal = () =>{
@@ -18,8 +18,11 @@ const MyOrder = () => {
 	return (
 		<aside className={styles.MyOrder}>
 			<div className={styles["title-container"]}>
-				<img src={arrow} alt="arrow" />
-				<p className={styles["title"]}>My order</p>
+				<img
+					src={arrow} 
+					alt="arrow" 
+					onClick={() => setToggleOrders(toggleOrders)}/>
+				<p className={styles["title"] }>My order</p>
 			</div>
 			<div className={styles["my-order-content"]}>
 				{state.cart.length > 0 ?(
