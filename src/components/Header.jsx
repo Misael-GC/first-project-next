@@ -28,7 +28,6 @@ function Header() {
 
       <div className={styles["navbar-left"]}>
         <Image src={logo} alt="logo" className={styles["nav-logo"]} />
-          
         <ul>
           <li>
             <a href="/">All</a>
