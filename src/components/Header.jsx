@@ -1,10 +1,10 @@
 import React, { useState, useContext } from "react";
 import AppContext from "@context/AppContext";
 import Menu from '@components/Menu';
-import MenuMobile from '../components/MenuMobile';
+import MenuMobile from '@components/MenuMobile';
 import MyOrder from '@containers/MyOrder.jsx';
 import Image from "next/image";
-import styles from '../styles/Header.module.scss';
+import styles from '@styles/Header.module.scss';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
@@ -63,7 +63,7 @@ function Header() {
             platzi@example.com
           </li>
           <li className={styles["navbar-shopping-cart" ]}onClick={() => setToggleOrders(!toogleOrders)}>
-            <Image src={shoppingCart} alt="shopping cart" />
+            <Image src={shoppingCart} alt="shopping cart" className={styles.pointer}/>
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>
         </ul>

@@ -21,6 +21,7 @@ const MyOrder = ({ toggleOrders, setToggleOrders }) => {
 				<img
 					src={arrow} 
 					alt="arrow" 
+					className={styles.pointer}
 					onClick={() => setToggleOrders(toggleOrders)}/>
 				<p className={styles["title"] }>My order</p>
 			</div>
