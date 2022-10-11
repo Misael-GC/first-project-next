@@ -23,7 +23,7 @@ const ProductItem = ({product}) => {
 					<p>{product.title}</p>
 				</div>
 				<figure onClick={() => handleClick(product)} className={styles['more-clickable-area']} >
-					<Image src={addCartImage} alt="addToCartImage" />
+					<Image src={addCartImage} alt="addToCartImage" width={30} height={30} layout='fixed'/>
 				</figure>
 			</div>
 		</div>
