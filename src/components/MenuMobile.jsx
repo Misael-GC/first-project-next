@@ -5,7 +5,6 @@ import Link from "next/link";
 function MenuMobile() {
   return (
     <div className={styles['mobile-menu']}>
-
       <ul>
         <li>
           <Link href="/">CATEGORIES</Link>
@@ -41,7 +40,7 @@ function MenuMobile() {
 
       <ul>
         <li>
-          <Link href="/" className={styles.email}>
+          <Link href="/" className={styles['email-unico']}>
             mail@example.com
           </Link>
         </li>
@@ -57,3 +56,4 @@ function MenuMobile() {
 };
 
 export default MenuMobile;
+

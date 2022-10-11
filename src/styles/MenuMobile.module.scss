@@ -19,7 +19,7 @@
     font-weight: bold;
   }
 
-  .mobile-menu ul:not(.email-1){
+  .mobile-menu ul:not(.email-unico){
     padding: 0;
     margin: 24px 0 0;
     list-style: none;
@@ -33,21 +33,22 @@
     margin-bottom: 22px;
   }
 
-  .mobile-menu .email{
+  .mobile-menu  .email-unico{
   font-size: $--sm;
   font-weight: 300;
+  color: red;
   }
 
-  .mobile-menu .sign-out{
+  .sign-out{
     font-size: $--sm;
     color: $--hospital-green;
   }
 
-  .email-1, #exp, #exp-1{
+  .email-unico, #exp, #exp-1{
     margin-bottom: 0;
   }
 
-  .email-1{
+  .email-unico{
     padding: 0;
     margin: 70px 0 0;
     list-style: none;
