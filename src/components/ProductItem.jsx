@@ -3,7 +3,7 @@ import Image from 'next/image';
 import addCartImage from '@icons/bt_add_to_cart.svg';
 import AppContext from '@context/AppContext';
 import styles from '../styles/ProductItem.module.scss';
-
+import addedToCartImage from '@icons/bt_added_to_cart.svg';
 
 
 
@@ -24,7 +24,12 @@ const ProductItem = ({product}) => {
 					<p>{product.title}</p>
 				</div>
 				<button onClick={() => handleClick(product)} className={styles['more-clickable-area']} >
-					<Image src={addCartImage} alt="addToCartImage" width={30} height={30} layout='fixed'/>
+					
+					{  state.cart.includes(product) ? <Image className={`${styles.disabled} ${styles['add-to-cart-btn']} ${styles.pointer}`} src={addedToCartImage} alt="added to cart" width={30} height={30} layout='fixed'/>  
+					:
+					 <Image src={addCartImage} alt="addToCartImage" width={30} height={30} layout='fixed'/> 
+					 }
+
 				</button>
 			</div>
 		</div>
