@@ -30,7 +30,9 @@ function Header() {
 
   return (
     <nav className={styles.Nav}>
-      <Image src={menu} alt="menu" className={styles.menu}  onClick={handleToggleMenuMobile}/>
+    <div className={styles.menu}>
+      <Image src={menu} alt="menu" onClick={handleToggleMenuMobile} width={25} height={25}/>
+    </div>
 
       <div className={styles["navbar-left"]}>
         <Link href='/'>
@@ -63,10 +65,10 @@ function Header() {
           <button className={styles["navbar-email"]} onClick={handleToggle}>
             platzi@example.com
           </button>
-          <button className={styles["navbar-shopping-cart"]}onClick={() => setToggleOrders(!toogleOrders)}>
+          <bu className={styles["navbar-shopping-cart"]}onClick={() => setToggleOrders(!toogleOrders)}>
             <Image src={shoppingCart} alt="shopping cart" className={styles.pointer}/>
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
-          </button>
+          </bu>
         </ul>
       </div>
       {toogle && <Menu/>}      {/* si toogle es true entonces se muestra */}

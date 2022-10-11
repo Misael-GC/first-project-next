@@ -1,7 +1,7 @@
 @import 'vars';
 
 .mobile-menu {
-    background: var(--white);
+    background: $--white;
     position: absolute; /* add styles clase 19*/
     top: 45px; /* add styles clase 19*/
     left: 0;
@@ -15,7 +15,7 @@
 
   .mobile-menu a{
     text-decoration: none;
-    color: var(--black);
+    color: $--black;
     font-weight: bold;
   }
 
@@ -26,7 +26,7 @@
   }
 
   .mobile-menu ul:nth-child(1){ 
-    border-bottom: 1px solid var(--very-light-pink);
+    border-bottom: 1px solid $--very-light-pink;
   }
 
   .mobile-menu ul li{
@@ -34,13 +34,13 @@
   }
 
   .mobile-menu .email{
-  font-size: var(--sm);
+  font-size: $--sm;
   font-weight: 300;
   }
 
   .mobile-menu .sign-out{
-    font-size: var(--sm);
-    color: var(--hospital-green);
+    font-size: $--sm;
+    color: $--hospital-green;
   }
 
   .email-1, #exp, #exp-1{
