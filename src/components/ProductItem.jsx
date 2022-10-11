@@ -8,9 +8,10 @@ import styles from '../styles/ProductItem.module.scss';
 
 
 const ProductItem = ({product}) => {
-	const { addToCart } = useContext(AppContext); //conexios -> checa App.jsx
+	const { state, addToCart } = useContext(AppContext); //conexios -> checa App.jsx
 
 	const handleClick = (item) => {
+		console.log('in cart: ', state.cart.includes(item));
 		addToCart(item);//agregar un producto al carrito
 	};
 	
