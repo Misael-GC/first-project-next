@@ -1,6 +1,5 @@
 import React from 'react';
 import OrderItem from '../components/OrderItem';
-import Menu from '../components/Menu';
 import styles from '@styles/Checkout.module.scss';
 
 function Checkout() {
@@ -20,7 +19,7 @@ function Checkout() {
 				<OrderItem />
 			</div>
 		</div>
-  )
-}
+  );
+};
 
-export default Checkout
+export default Checkout;

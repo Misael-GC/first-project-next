@@ -9,7 +9,6 @@ import styles from '@styles/Header.module.scss';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
-// import '@styles/Header.scss';
 
 
 function Header() {
@@ -20,12 +19,12 @@ function Header() {
   
 
   const handleToggle = () =>{
-    setToggle(prevToggle => !prevToggle); //lo va a cambiar a su inversa
+    setToggle(prevToggle => !prevToggle); //lo va Link cambiar Link su inversa
   };
 
   const handleToggleMenuMobile = () => {
     setToggleMenuMobile(!toogleMenuMobile);
-    console.log("entra")
+    console.log("entra");
   };
 
 
@@ -39,35 +38,35 @@ function Header() {
         </Link>
         <ul>
           <li>
-            <a href="/">All</a>
+            <Link href="/">All</Link>
           </li>
           <li>
-            <a href="/">Clothes</a>
+            <Link href="/">Clothes</Link>
           </li>
           <li>
-            <a href="/">Electronics</a>
+            <Link href="/">Electronics</Link>
           </li>
           <li>
-            <a href="/">Furnitures</a>
+            <Link href="/">Furnitures</Link>
           </li>
           <li>
-            <a href="/">Toys</a>
+            <Link href="/">Toys</Link>
           </li>
           <li>
-            <a href="/">Others</a>
+            <Link href="/">Others</Link>
           </li>
         </ul>
       </div>
 
       <div className={styles["navbar-right"]}>
         <ul>
-          <li className={styles["navbar-email"]} onClick={handleToggle}>
+          <button className={styles["navbar-email"]} onClick={handleToggle}>
             platzi@example.com
-          </li>
-          <li className={styles["navbar-shopping-cart"]}onClick={() => setToggleOrders(!toogleOrders)}>
+          </button>
+          <button className={styles["navbar-shopping-cart"]}onClick={() => setToggleOrders(!toogleOrders)}>
             <Image src={shoppingCart} alt="shopping cart" className={styles.pointer}/>
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
-          </li>
+          </button>
         </ul>
       </div>
       {toogle && <Menu/>}      {/* si toogle es true entonces se muestra */}

@@ -18,6 +18,6 @@ const ProductList = () => {
 			</div>
 		</section>
 	);
-}
+};
 
 export default ProductList;

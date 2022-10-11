@@ -55,6 +55,9 @@
     color: $--very-light-pink;
     font-size: $--sm;
     margin-right: 12px;
+    // outline: none;
+    background-color: $--white;
+    border: none;
 }
 .navbar-email:hover {
     cursor: pointer;
@@ -62,6 +65,8 @@
   }
 .navbar-shopping-cart {
     position: relative;
+    background-color: $--white;
+    border: none;
 }
 .navbar-shopping-cart div {
     width: 16px;

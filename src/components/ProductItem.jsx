@@ -12,7 +12,7 @@ const ProductItem = ({product}) => {
 
 	const handleClick = (item) => {
 		addToCart(item);//agregar un producto al carrito
-	}
+	};
 	
 	return (
 		<div className={styles.ProductItem}>
@@ -22,12 +22,12 @@ const ProductItem = ({product}) => {
 					<p>${product.price}</p>
 					<p>{product.title}</p>
 				</div>
-				<figure onClick={() => handleClick(product)} className={styles['more-clickable-area']} >
+				<button onClick={() => handleClick(product)} className={styles['more-clickable-area']} >
 					<Image src={addCartImage} alt="addToCartImage" width={30} height={30} layout='fixed'/>
-				</figure>
+				</button>
 			</div>
 		</div>
 	);
-}
+};
 
 export default ProductItem;

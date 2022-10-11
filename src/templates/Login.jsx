@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import styles from '../styles/Login.module.scss';
+import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
+import Link from 'next/link';
 
 const Login = () => {
 	const form = useRef(null);
@@ -10,15 +12,15 @@ const Login = () => {
 		const data = {
 			username: formData.get('email'),
 			password: formData.get('password'),
-		}
+		};
 		console.log(data);
-	}
+	};
 	
 
 	return (
 		<div className={styles.Login}>
 			<div className={styles["Login-container"]}>
-				<img src={logo} alt="logo" className={styles["login-logo"]} />
+				<Image src={logo} alt="logo" className={styles["login-logo"]} width={25} height={25}/>
 				<form action="/" className={styles.form} ref={form}>
 					<label htmlFor="email" className={styles.label}>Email address</label>
 					<input type="text" name="email" placeholder="platzi@example.cm" className={styles["input input-email"]} />
@@ -27,12 +29,12 @@ const Login = () => {
 					<button onClick={handleSubmit} className={`${styles["primary-button"]} ${styles['login-button']}`} >
 						Log in 
 					</button>
-					<a href="/">Forgot my password</a>
+					<Link href="/">Forgot my password</Link>
 				</form>
 				<button className={`${styles["secondary-button"]} ${styles["signup-button"]}`}>Sign up</button>
 			</div>
 		</div>
 	);
-}
+};
 
 export default Login;

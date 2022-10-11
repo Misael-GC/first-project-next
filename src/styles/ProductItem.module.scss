@@ -15,6 +15,16 @@
 	align-items: center;
 	margin-top: 12px;
 }
+.more-clickable-area{
+	background-color: $--white; //transparent
+    border: none;
+	border-radius: 450%;
+	padding: 1px 3px;
+}
+.more-clickable-area:hover{
+	background-color: $--white;
+	padding: 2px 4px;
+}
 .product-info figure {
 	margin: 0;
 }
@@ -23,6 +33,7 @@
 	height: 35px;
 	cursor: pointer;
 }
+
 
 .product-info div p:nth-child(1) {
 	font-weight: bold;

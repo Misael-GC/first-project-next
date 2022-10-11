@@ -11,6 +11,6 @@ const NotFound = () => {
     <Link to="/" className={styles["home-page-link"]}>👉Regresa a la página de inicio👈</Link>
 </div>
 	);
-}
+};
 
 export default NotFound;
