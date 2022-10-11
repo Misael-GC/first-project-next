@@ -1,17 +1,19 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const useGetProduct = (API)=>{
-    const [products, setProducts] = useState([]);//el estado inicial es [] porque la api asi esta estructurada
+const useGetProducts = (API) => {
+  const [products, setProducts] = useState([]);
 
-	useEffect(() => {
-		const fetchProducts = async () => {
-			const response = await axios(API);
-			setProducts(response.data);
-		}
-		fetchProducts();
-	},[]);
-    return products;
+  useEffect(() => {
+    (async () => {
+      const response = await axios(API);
+      setProducts(response.data.filter((item) => {
+        return item.id < 200;
+      }));
+    })();
+  }, []);
+
+  return products;
 };
 
-export default useGetProduct;
+export default useGetProducts;
