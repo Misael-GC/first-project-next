@@ -6,9 +6,9 @@ import Head from 'next/head';
 function Checkout() {
   return (
     <>
-	<Head>
-		<title>Checkout</title>
-	</Head>
+      <Head>
+        <title>Checkout</title>
+      </Head>
       <div className={styles.Checkout}>
         <div className={styles['Checkout-container']}>
           <h1 className={styles.title}>My order</h1>

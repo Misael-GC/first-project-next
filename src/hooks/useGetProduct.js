@@ -7,11 +7,13 @@ const useGetProducts = (API) => {
   useEffect(() => {
     (async () => {
       const response = await axios(API);
-      setProducts(response.data.filter((item) => {
-        return item.id < 200;
-      }));
+      setProducts(
+        response.data.filter((item) => {
+          return item.id < 200;
+        })
+      );
     })();
-  }, []);
+  }, [API]);
 
   return products;
 };
