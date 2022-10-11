@@ -1,0 +1,62 @@
+@import 'vars';
+
+.mobile-menu {
+    background: $--white;
+    position: absolute; /* add styles clase 19*/
+    top: 45px; /* add styles clase 19*/
+    left: 0;
+    width: 100%;
+    padding: 12px 24px 24px 24px;
+    /* transition: 400ms; */
+    display: none;
+    z-index: 3;
+    background: $--white;
+  }
+
+  .mobile-menu a{
+    text-decoration: none;
+    color: $--black;
+    font-weight: bold;
+  }
+
+  .mobile-menu ul:not(.email-unico){
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+  }
+
+  .mobile-menu ul:nth-child(1){ 
+    border-bottom: 1px solid $--very-light-pink;
+  }
+
+  .mobile-menu ul li{
+    margin-bottom: 22px;
+  }
+
+  .mobile-menu  .email-unico{
+  font-size: $--sm;
+  font-weight: 300;
+  color: red;
+  }
+
+  .sign-out{
+    font-size: $--sm;
+    color: $--hospital-green;
+  }
+
+  .email-unico, #exp, #exp-1{
+    margin-bottom: 0;
+  }
+
+  .email-unico{
+    padding: 0;
+    margin: 70px 0 0;
+    list-style: none;
+  }
+
+  @media (max-width: 640px) {
+    .mobile-menu {
+        display: inline-block;
+    }
+
+}
