@@ -13,7 +13,6 @@ import logo from '@logos/logo_yard_sale.svg';
 
 
 function Header() {
-
   const { state } = useContext(AppContext);
   const [toogle, setToggle] = useState(false);
   const [toogleOrders, setToggleOrders] = useState(false);
