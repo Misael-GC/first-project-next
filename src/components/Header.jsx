@@ -65,7 +65,7 @@ function Header() {
           <li className={styles["navbar-email"]} onClick={handleToggle}>
             platzi@example.com
           </li>
-          <li className={styles["navbar-shopping-cart" ]}onClick={() => setToggleOrders(!toogleOrders)}>
+          <li className={styles["navbar-shopping-cart"]}onClick={() => setToggleOrders(!toogleOrders)}>
             <Image src={shoppingCart} alt="shopping cart" className={styles.pointer}/>
             {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
           </li>

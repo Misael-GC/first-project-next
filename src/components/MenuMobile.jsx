@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/MenuMobile.module.scss';
+import styles from '@styles/MenuMobile.module.scss';
 
 function MenuMobile() {
   return (
